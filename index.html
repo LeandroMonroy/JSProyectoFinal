@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MAC-STORE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ---------------------------------------- NAVBAR ---------------------------------------- -->
+    <div class="navbar py-3">
+      <div class="container d-flex justify-content-around">
+        <a href="#" class="nav-link"><i class="bi bi-apple"></i></a>
+        <a href="#" class="nav-link">Store</a>
+        <a href="#" class="nav-link">Mac</a>
+        <a href="#" class="nav-link">iPad</a>
+        <a href="#" class="nav-link">iPhone</a>
+        <a href="#" class="nav-link">Watch</a>
+        <a href="#" class="nav-link">Vision</a>
+        <a href="#" class="nav-link">AirPods</a>
+        <a href="#" class="nav-link">TV & Home</a>
+        <a href="#" class="nav-link">Entertaiment</a>
+        <a href="#" class="nav-link">Accesories</a>
+        <a href="#" class="nav-link">Support</a>
+        <a href="#" class="nav-link"><i class="bi bi-search"></i></a>
+        <a href="#" class="nav-link"
+          ><i class="bi bi-bag"></i><span id="nCart">0</span></a
+        >
+      </div>
+    </div>
+
+    <!-- ---------------------------------------- HERO ---------------------------------------- -->
+    <div class="container-fluid first-hero">
+      <div class="d-flex justify-content-center mt-5">
+        <p class="apple-title py-0 my-0">The Apple Store Shopping Event</p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p class="apple-subtitle py-0 my-0">
+          Get an Apple Gift Card up to $200 with your eligible purchase.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p class="apple-subtitle sub2 py-0 my-0">Offer starts 11.24.</p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p><a href="" class="apple-link py-0 my-0">Get an early look></a></p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="./assets/img/Apple-Img-1.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-fluid second-hero pt-5">
+      <div class="d-flex justify-content-center">
+        <p class="apple-title py-0 my-0 text-white">iPhone 15 Pro</p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p class="apple-subtitle py-0 my-0 text-white">
+          Titanium. So strong. So light. So Pro.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p>
+          <a href="" class="apple-link py-0 my-0 px-3">Learn more></a>
+          <a href="" class="apple-link py-0 my-0 px-3">Buy></a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="./assets/img/Apple-Img-2.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-fluid my-3">
+      <div class="d-flex justify-content-center">
+        <img src="./assets/img/Apple-Img-3.png" alt="" />
+      </div>
+    </div>
+
+    <!-- ------------------------------ CARDS DESDE SCRIPT --------------------------------------->
+    <div id="card-container" class="container-fluid">
+      <div
+        id="homeCardItems"
+        class="card-container row d-flex justify-content-md-center"
+      ></div>
+    </div>
+
+    <template id="templateHomeCard">
+      <!-- CARD 1-->
+      <div class="card col-lg-6 col-sm-6 text-center">
+        <!--TITLE-->
+        <p class="card-title py-0 my-0"><i class="bi bi-apple"></i>WATCH</p>
+        <!-- SUBTITLE -->
+        <p class="card-subtitle py-0 my-0 red">SERIES 9</p>
+        <!-- DESCRIPTION -->
+        <p class="card-description py-0 my-0">Smarter. Brighter. Midhtier.</p>
+        <!-- PRICE -->
+        <p class="card-price py-0 my-0">1500</p>
+        <!--LINKS-->
+        <button class="learn-btn col">Learn More></button>
+        <button class="buy-btn col">Buy></button>
+
+        <!-- IMAGEN-->
+        <img
+          src="./assets/img/Card1.png"
+          alt=""
+          class="w-100 img-fluid img-fit"
+        />
+      </div>
+    </template>
+    <!---------------------------------------------------------------------------------------------->
+
+    <!-- TABLES-->
+    <div class="container">
+      <p class="card-title py-0 my-0">
+        <i class="bi bi-apple"></i> SHOPPING CART
+      </p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Sub total</th>
+          </tr>
+        </thead>
+        <tbody id="homeTableItems"></tbody>
+        <tfoot>
+          <tr id="homeTableFooter">
+            <th scope="row" colspan="6">Empty, buy your new gadget.</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <template id="templateCart">
+      <tr>
+        <th scope="row">1234</th>
+        <td class="title">WATCH</td>
+        <td class="price">3500</td>
+        <td class="quantity">3</td>
+        <td>
+          <button class="btn btn-danger btn-sm btn-less">-</button
+          ><button class="btn btn-success btn-sm btn-plus">+</button>
+        </td>
+        <td class="subtotal">35000</td>
+      </tr>
+    </template>
+
+    <template id="templateTableFooter">
+      <th scope="row" colspan="2">Productos Total:</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="btn-dropAll">Drop All</button>
+      </td>
+      <td colspan="2" class="font-weight-bold">Total $ <span> 5000</span></td>
+    </template>
+
+    <!-- APP.JS-->
+    <script src="./assets/js/app.js"></script>
+    <!-- BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

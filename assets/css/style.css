@@ -1,0 +1,143 @@
+/*Adobe Fonts Myriad*/
+@import url("https://use.typekit.net/hkz1rrd.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f7;
+}
+
+.navbar {
+    background: #434344;
+}
+
+.nav-link{
+    color: white;
+    font-size: 0.75rem;
+}
+
+
+.apple-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.apple-subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sub2 {
+    font-size: 1.3rem;
+    color: #87878c;
+    font-weight: 350;
+}
+
+.apple-link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2f66cc;
+    font-weight: 350;
+}
+
+
+.bi-apple {
+    margin: auto;
+}
+
+.carousel-size {
+width: 100vw;
+}
+
+.first-hero {
+    background: #f5f5f7;
+}
+
+.second-hero {
+    background: #000000;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* ---------------------------------------- CARDS ---------------------------------------- */
+.card {
+border: none;
+min-height: 500px;
+padding: 60px 0 0 0;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 200px;
+}
+
+.card-subtitle {
+    font-size: 0.8rem;
+}
+
+.card-description {
+    font-size: 1.3rem;
+}
+
+.img-fit {
+object-fit:contain;
+display: flex;
+}
+
+.card-price {
+    display: none;
+}
+
+.buy-btn, .learn-btn{
+    background: transparent;
+    border: none;
+    color: #2f66cc;
+    display:flex;
+    flex-direction:row;
+
+}
+
+.c-black {
+    background: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+.red {
+    color: #ce2b31;
+}
+
+.orange {
+    color: #fd6a13;
+}
+
+.btn-less, .btn-plus {
+    margin: auto;
+    padding: 0 10px;
+    color: white;
+    /*
+    width: 30px;
+    margin-left: 2px;
+    margin-right: 2px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+

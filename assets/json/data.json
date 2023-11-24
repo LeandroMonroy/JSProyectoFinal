@@ -1,0 +1,56 @@
+[
+    {
+        "id":"1234",
+        "ccolor": "c-black",
+        "bi-model": "bi-apple",
+        "title":"WATCH",
+        "subtitle":"SERIES 9",
+        "subtitle-color": "red",
+        "description": "Smarter. Brighter. Midhtier.",
+        "img":"./assets/img/Card1.png",
+        "stock":"25",
+        "price":"1500"
+    },
+    {
+        "id":"2345",
+        "ccolor": "x",
+        "bi-model": "",
+        "title":"MacBook Pro",
+        "subtitle":"",
+        "subtitle-color": "",
+        "description": "Mind-blowing. Head-turning.",
+        "img":"./assets/img/Card2.png",
+        "stock":"15",
+        "price":"1500"
+    },
+    {
+        "id":"3456",
+        "ccolor": "x",
+        "bi-model": "bi-apple",
+        "title":"WATCH",
+        "subtitle":"ULTRA 2",
+        "subtitle-color": "orange",
+        "description": "Next level adventure.",
+        "img":"./assets/img/Card3.png",
+        "stock":"20",
+        "price":"1500"
+    },
+    {
+        "id":"4567",
+        "ccolor": "c-black",
+        "bi-model": "",
+        "title":"AirPods Pro",
+        "subtitle":"",
+        "subtitle-color": "",
+        "description": "Say it in a way only you can.",
+        "img":"./assets/img/Card4.png",
+        "stock":"35",
+        "price":"1500"
+    }   
+]
+
+
+
+
+
+
